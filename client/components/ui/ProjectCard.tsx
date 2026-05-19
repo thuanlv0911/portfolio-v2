@@ -1,4 +1,5 @@
 import { Project } from "@/types/project";
+import Link from "next/link";
 
 interface ProjectCardProps {
     project: Project;
@@ -28,13 +29,12 @@ export default function ProjectCard({
                 ))}
             </div>
 
-            <a
-                href={project.githubUrl}
-                target="_blank"
+            <Link
+                href={`/projects/${project.id}`}
                 className="mt-6 inline-block text-blue-400"
             >
-                View Project -&gt;
-            </a>
+                View Project →
+            </Link>
         </div>
     );
 }
