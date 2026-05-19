@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import Container from "../ui/Container";
 import {
     FaGithub,
@@ -14,17 +16,30 @@ export default function HeroSection() {
                         Fullstack Developer
                     </p>
 
-                    <h1 className="text-5xl font-bold leading-tight md:text-7xl">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-5xl font-bold leading-tight md:text-7xl"
+                    >
                         Hi, I am Thuan.
-                    </h1>
+                    </motion.h1>
 
-                    <h2 className="mt-4 text-4xl font-semibold text-gray-300 md:text-6xl">
-                        I build modern web applications.
-                    </h2>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.8,
+                            delay: 0.2,
+                        }}
+                        className="mt-4 text-4xl font-semibold text-gray-300 md:text-6xl"
+                    >
+                        I am a
+                        Front-end Developer!
+                    </motion.h2>
 
                     <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-                        Passionate about React, NextJS, NestJS and building
-                        scalable fullstack applications.
+                        I am a Front-end Developer with a passion for creating beautiful and functional user interfaces. I have experience in React, JavaScript, and CSS, and I love to learn new technologies.
                     </p>
 
                     <div className="mt-10 flex gap-4">
