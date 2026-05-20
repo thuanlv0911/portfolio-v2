@@ -1,0 +1,26 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Portfolio V2",
+            "description": "Modern portfolio built with NextJS.",
+            "techStack": [
+                "NextJS",
+                "TypeScript",
+                "Tailwind"
+            ],
+            "githubUrl": "https://github.com/"
+        },
+        {
+            "id": 2,
+            "title": "Event Management System",
+            "description": "Fullstack event platform.",
+            "techStack": [
+                "React",
+                "NestJS",
+                "MongoDB"
+            ],
+            "githubUrl": "https://github.com/"
+        }
+    ]
+}
