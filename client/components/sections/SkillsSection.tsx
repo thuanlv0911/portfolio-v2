@@ -3,7 +3,7 @@ import { skills } from "@/data/skills";
 
 export default function SkillsSection() {
     return (
-        <section className="py-32">
+        <section id="skills" className="py-32">
             <Container>
                 <h2 className="text-4xl font-bold">
                     Skills
