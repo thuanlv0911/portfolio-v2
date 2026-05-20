@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 
 export default function ProjectsSection() {
     return (
-        <section className="py-32">
+        <section id="projects" className="py-32">
             <Container>
                 <h2 className="text-4xl font-bold">
                     Projects

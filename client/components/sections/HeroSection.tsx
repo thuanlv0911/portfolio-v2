@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Container from "../ui/Container";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 import {
     FaGithub,
@@ -10,7 +11,7 @@ import {
 } from "react-icons/fa";
 export default function HeroSection() {
     return (
-        <section className="flex min-h-screen items-center px-8">
+        <section id="home" className="flex min-h-screen items-center px-8">
 
             <Container>
                 <div className="grid items-center gap-16 md:grid-cols-2">
@@ -41,11 +42,22 @@ export default function HeroSection() {
                             Front-end Developer!
                         </motion.h2>
 
-                        <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
+                        <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
                             I am a Front-end Developer with a passion for creating beautiful and functional user interfaces. I have experience in React, JavaScript, and CSS, and I love to learn new technologies.
                         </p>
+                        <div className="mt-10 flex gap-4">
+                            <Button size="lg">
+                                View Projects
+                            </Button>
 
-                        <motion.div
+                            <Button
+                                variant="outline"
+                                size="lg"
+                            >
+                                Contact Me
+                            </Button>
+                        </div>
+                        {/* <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{
@@ -61,7 +73,7 @@ export default function HeroSection() {
                             <button className="rounded-xl border border-gray-600 px-6 py-3 transition hover:bg-white/10">
                                 Contact Me
                             </button>
-                        </motion.div>
+                        </motion.div> */}
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
