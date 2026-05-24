@@ -1,5 +1,6 @@
-import Container from "../ui/Container";
-import ProjectCard from "../ui/ProjectCard";
+
+import Container from "@/components/ui/Container";
+import ProjectCard from "@/components/ui/ProjectCard";
 import { getProjects } from "@/services/project.service";
 
 export default async function ProjectsSection() {
@@ -26,4 +27,4 @@ export default async function ProjectsSection() {
             </Container>
         </section>
     );
-} 
+}

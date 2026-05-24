@@ -11,7 +11,15 @@ export default function Navbar() {
         <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/20 py-4 backdrop-blur">
             <Container>
                 <div className="flex items-center justify-between">
-
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="md:hidden"
+                    >
+                        <Menu />
+                    </button>
+                    <h1 className="text-2xl font-bold">
+                        Thuans Portfolio
+                    </h1>
                     <ul className="hidden items-center gap-8 md:flex">
                         {navLinks.map((link) => (
                             <li key={link.href}>
@@ -26,15 +34,8 @@ export default function Navbar() {
                             </li>
                         ))}
                     </ul>
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        className="md:hidden"
-                    >
-                        <Menu />
-                    </button>
-                    <h1 className="text-2xl font-bold">
-                        Thuans Portfolio
-                    </h1>
+
+
 
                     <ThemeToggle />
                     {isOpen && (

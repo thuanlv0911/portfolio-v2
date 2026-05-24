@@ -46,15 +46,20 @@ export default function HeroSection() {
                             I am a Front-end Developer with a passion for creating beautiful and functional user interfaces. I have experience in React, JavaScript, and CSS, and I love to learn new technologies.
                         </p>
                         <div className="mt-10 flex gap-4">
-                            <Button size="lg">
-                                View Projects
+                            <Button size="lg" asChild>
+                                <a href="#projects">
+                                    View Projects
+                                </a>
                             </Button>
 
                             <Button
                                 variant="outline"
                                 size="lg"
+                                asChild
                             >
-                                Contact Me
+                                <a href="#contact">
+                                    Contact Me
+                                </a>
                             </Button>
                         </div>
                         {/* <motion.div
@@ -86,6 +91,7 @@ export default function HeroSection() {
                             <a
                                 href="https://github.com/thuanlv0911"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <FaGithub className="transition hover:scale-110 hover:text-gray-400" />
                             </a>
@@ -93,6 +99,7 @@ export default function HeroSection() {
                             <a
                                 href="https://facebook.com/thuanlv0911"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <FaFacebook className="transition hover:scale-110 hover:text-blue-400" />
                             </a>
@@ -100,6 +107,7 @@ export default function HeroSection() {
                             <a
                                 href="https://instagram.com/thuanlv0911"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <FaInstagram className="transition hover:scale-110 hover:text-pink-400" />
                             </a>
@@ -112,7 +120,8 @@ export default function HeroSection() {
                             alt="avatar"
                             width={400}
                             height={400}
-                            className="rounded-full border border-white/10"
+                            className="rounded-full border border-white/10 shadow-2xl transition hover:scale-105"
+                            priority
                         />
                     </div>
                 </div>

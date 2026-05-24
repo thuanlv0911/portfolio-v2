@@ -15,6 +15,11 @@ export const navLinks = [
     },
 
     {
+        label: "Certifications",
+        href: "#certifications",
+    },
+
+    {
         label: "Contact",
         href: "#contact",
     },
