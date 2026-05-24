@@ -1,4 +1,47 @@
 {
+    "profile": {
+        "id": 1,
+        "name": "Thuan",
+        "role": "Fullstack Developer",
+        "headline": "Building scalable and modern web applications.",
+        "description": "Passionate about building fullstack applications using React, NextJS, NestJS, and MongoDB.",
+        "avatar": "/images/hxx.jpg"
+    },
+    "socialLinks": [
+        {
+            "id": 1,
+            "platform": "github",
+            "url": "https://github.com/thuanlv0911"
+        },
+        {
+            "id": 2,
+            "platform": "facebook",
+            "url": "https://facebook.com/thuanlv0911"
+        },
+        {
+            "id": 3,
+            "platform": "instagram",
+            "url": "https://instagram.com/thuanlv0911"
+        }
+    ],
+    "skills": [
+        {
+            "id": 1,
+            "name": "React"
+        },
+        {
+            "id": 2,
+            "name": "NextJS"
+        },
+        {
+            "id": 3,
+            "name": "NestJS"
+        },
+        {
+            "id": 4,
+            "name": "MongoDB"
+        }
+    ],
     "projects": [
         {
             "id": 1,
@@ -21,6 +64,16 @@
                 "MongoDB"
             ],
             "githubUrl": "https://github.com/"
+        }
+    ],
+    "certificates": [
+        {
+            "id": 1,
+            "title": "React Developer Certificate",
+            "issuer": "Coursera",
+            "issueDate": "2025",
+            "image": "/images/certificates/react-cert.jpg",
+            "credentialUrl": "https://coursera.org/"
         }
     ]
 }
